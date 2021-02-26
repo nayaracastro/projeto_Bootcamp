@@ -1,0 +1,63 @@
+<html>
+
+    <head>
+
+        {% block head %}
+
+            <title>Foodfy</title>
+
+        {% endblock %}
+
+        <link rel="Stylesheet" href="/pages.css">
+        <script src="/scripts.js" defer="defer"></script>
+
+    </head>
+
+    <body>
+
+        <div class="modal-pai ">
+            <div class="modal">
+
+                <div class="modal-receita">
+                    <img src=" " alt=" ">
+                </div>
+
+                <div class="modal-tit">
+                    <h4></h4>
+                </div>
+                <div class="modal-subtit">
+                    <p></p>
+                </div>
+                <class class="modal-close">
+                    <p>Fechar</p>
+                </class>
+
+            </div>
+
+        </div>
+
+        <div class="agreg-tam">
+
+            <header class="menu">
+                <div id="nav">
+                    <a href="/about" target="_blank">Sobre</a>
+                    <a href="/courses">Receitas</a>
+                </div>
+
+                <div id="logo">
+                    <a href="/"><img src="img/logo.png" alt="logo_nome"/></a>
+                </div>
+            </header>
+            {% block content %}{% endblock %}
+        </div>
+
+        {% block footer %}
+
+            <footer>
+                <div class="fim">
+                    <p>Todos direitos reservados, receitas Foodfy.</p>
+                </div>
+            </footer>
+
+        {% endblock %}
+    </body>
